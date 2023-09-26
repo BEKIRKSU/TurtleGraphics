@@ -73,7 +73,7 @@ for _ in range(220):
     ttt.setheading(random.choice(directions))
 # Good use of documentations
 
-
+# tuples are different to arrays/lists. It cannot be changed
 
 
 
