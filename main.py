@@ -3,6 +3,7 @@ from turtle import Turtle, Screen
 
 
 timmy_the_turtle = Turtle()
+timmy_the_turtle.shape("turtle")
 
 
 
@@ -11,7 +12,7 @@ timmy_the_turtle = Turtle()
 
 
 
-
+# Use documentations to figure out how to use these packages and modules.
 
 screen = Screen()
 screen.exitonclick()
