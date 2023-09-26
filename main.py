@@ -62,7 +62,8 @@ for _ in range(5):
 
 directions = [0, 90, 100, 180, 250, 270, 275, 360]
 speed = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-distance = [0, 27]
+distance = range(0, 27)
+# These are nice examples ^ can be used in many ways
 
 for _ in range(220):
     ttt.speed(random.choice(speed))
