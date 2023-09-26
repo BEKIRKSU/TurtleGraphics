@@ -7,9 +7,9 @@ ttt.shape("turtle")
 # Use documentation to find different shapes, particular functions etc such as .shape("")
 # Or Google it
 ttt.color("DarkSeaGreen")
-ttt.right(77)
-ttt.forward(77)
-ttt.right(77)
+# ttt.right(77)
+# ttt.forward(77)
+# ttt.right(77)
 
 # timmy_the_turtle.right(90)
 # timmy_the_turtle.forward(100)
