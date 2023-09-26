@@ -66,6 +66,7 @@ distance = range(0, 27)
 # These are nice examples ^ can be used in many ways
 
 for _ in range(220):
+    ttt.color(random.choice(colours))
     ttt.speed(random.choice(speed))
     ttt.pendown()
     ttt.forward(random.choice(distance))
