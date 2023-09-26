@@ -40,7 +40,7 @@ colours = ["blue", "green", "orange", "yellow", "black", "red"]
 def draw_shape(num_sides):
     angle = 360 / num_sides
     for _ in range(num_sides):
-
+        ttt.speed(9)
         ttt.forward(100)
         ttt.right(angle)
 
