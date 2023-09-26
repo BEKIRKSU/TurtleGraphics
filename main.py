@@ -7,8 +7,9 @@ timmy_the_turtle.shape("turtle")
 # Use documentation to find different shapes, particular functions etc such as .shape("")
 # Or Google it
 timmy_the_turtle.color("DarkSeaGreen")
+timmy_the_turtle.right(77)
 timmy_the_turtle.forward(77)
-
+timmy_the_turtle.right(77)
 
 
 
