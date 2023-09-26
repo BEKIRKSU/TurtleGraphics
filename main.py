@@ -11,14 +11,20 @@ timmy_the_turtle.right(77)
 timmy_the_turtle.forward(77)
 timmy_the_turtle.right(77)
 
-timmy_the_turtle.right(90)
-timmy_the_turtle.forward(100)
-timmy_the_turtle.right(90)
-timmy_the_turtle.forward(100)
-timmy_the_turtle.right(90)
-timmy_the_turtle.forward(100)
-timmy_the_turtle.right(90)
-timmy_the_turtle.forward(100)
+# timmy_the_turtle.right(90)
+# timmy_the_turtle.forward(100)
+# timmy_the_turtle.right(90)
+# timmy_the_turtle.forward(100)
+# timmy_the_turtle.right(90)
+# timmy_the_turtle.forward(100)
+# timmy_the_turtle.right(90)
+# timmy_the_turtle.forward(100)
+# instead use the for loop and range operator:
+
+for _ in range(4):
+    timmy_the_turtle.right(90)
+    timmy_the_turtle.forward(100)
+
 
 
 
