@@ -35,7 +35,7 @@ print(heroes.gen())
 import random
 # You can import anywhere, just has to be before you use it.
 
-colours = ["blue", "green", "orange", "yellow", "black", "red"]
+colours = ["blue", "green", "orange", "yellow", "black", "red", "DeepSkyBlue", "cyan4", "coral", "AntiqueWhite3"]
 
 def draw_shape(num_sides):
     angle = 360 / num_sides
