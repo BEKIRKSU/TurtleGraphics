@@ -32,12 +32,27 @@ import heroes
 # want to download it, very clear and straightforward.
 print(heroes.gen())
 
-for _ in range(4):
-    ttt.pensize(10)
+
+def draw_shape(num_sides):
+    angle = 360 / num_sides
+    for _ in range(num_sides):
+        ttt.forward(100)
+        ttt.right(angle)
+
+
+for shape_side_n in range(3, 11):
+    draw_shape(shape_side_n)
+
+for _ in range(5):
+    ttt.pensize(5)
     ttt.pendown()
     ttt.forward(10)
     ttt.penup()
     ttt.forward(10)
+# Good use of documentations
+
+
+
 
 
 
