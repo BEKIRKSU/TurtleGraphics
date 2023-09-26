@@ -32,6 +32,13 @@ import heroes
 # want to download it, very clear and straightforward.
 print(heroes.gen())
 
+for _ in range(4):
+    ttt.pensize(10)
+    ttt.pendown()
+    ttt.forward(10)
+    ttt.penup()
+    ttt.forward(10)
+
 
 
 
