@@ -32,15 +32,21 @@ import heroes
 # want to download it, very clear and straightforward.
 print(heroes.gen())
 
+import random
+# You can import anywhere, just has to be before you use it.
+
+colours = ["blue", "green", "orange", "yellow", "black", "red"]
 
 def draw_shape(num_sides):
     angle = 360 / num_sides
     for _ in range(num_sides):
+
         ttt.forward(100)
         ttt.right(angle)
 
 
 for shape_side_n in range(3, 11):
+    ttt.color(random.choice(colours))
     draw_shape(shape_side_n)
 
 for _ in range(5):
