@@ -49,12 +49,23 @@ for shape_side_n in range(3, 11):
     ttt.color(random.choice(colours))
     draw_shape(shape_side_n)
 
+# Here's how to do a random walk, which is used in many disciplines such as Maths and Physics.
+
+
+
 for _ in range(5):
     ttt.pensize(5)
     ttt.pendown()
     ttt.forward(10)
     ttt.penup()
     ttt.forward(10)
+
+directions = [0, 90, 100, 180, 250, 270, 275, 360]
+
+for _ in range(220):
+    ttt.pendown()
+    ttt.forward(27)
+    ttt.setheading(random.choice(directions))
 # Good use of documentations
 
 
