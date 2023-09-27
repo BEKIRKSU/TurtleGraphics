@@ -1,9 +1,8 @@
 from turtle import Turtle, Screen
 import random
+
 # import heroes
-
 # Comment and uncomment areas of code to get selected areas working.
-
 # We tap into the module to change the colour.
 
 
