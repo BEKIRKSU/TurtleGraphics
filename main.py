@@ -2,6 +2,7 @@ from turtle import Turtle, Screen
 import random
 # import heroes
 
+# Comment and uncomment areas of code to get selected areas working.
 
 # We tap into the module to change the colour.
 ttt = Turtle()
@@ -40,8 +41,8 @@ def random_color():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
     b = random.randint(0, 255)
-    random_color = (r, g, b)
-    return random_color
+    colour = (r, g, b)
+    return colour
 
 
 def draw_shape(num_sides):
@@ -53,7 +54,7 @@ def draw_shape(num_sides):
 
 
 for shape_side_n in range(3, 11):
-    ttt.color(random_color())
+    ttt.color(colour())
     # we're using the tuple we made above using r,g,b for random color.
     draw_shape(shape_side_n)
 
