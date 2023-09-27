@@ -18,12 +18,17 @@ def random_color():
 # To make a spirograph:
 ttt = Turtle()
 ttt.speed("fastest")
-for _ in range(100):
-    ttt.color(random_color())
-    ttt.circle(100)
-    # radius 100 ^
-    current_heading = ttt.heading()
-    ttt.setheading(current_heading + 7)
+# We make a function below, around a code which we had earlier (the order of coding sometimes).
+def draw_sprirograph(angle_size):
+    for _ in range(360 / angle_size):
+        ttt.color(random_color())
+        ttt.circle(100)
+        # radius 100 ^
+        current_heading = ttt.heading()
+        ttt.setheading(current_heading + angle_size)
+
+# call the function with an angle size of choice
+draw_sprirograph(3)
 
 
 screen = Screen()
