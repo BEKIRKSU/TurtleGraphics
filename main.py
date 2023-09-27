@@ -88,13 +88,10 @@ for _ in range(220):
 # Look above the colours array to see an example.
 
 
-
-
-
-
-
-
-
+# To make a spirograph:
+ttt.speed("fastest")
+ttt.circle(100)
+# radius 100 ^
 
 
 
