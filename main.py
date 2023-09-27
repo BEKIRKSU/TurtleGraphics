@@ -11,18 +11,19 @@ def random_color():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
     b = random.randint(0, 255)
-    colour = (r, g, b)
-    return colour
+    color = (r, g, b)
+    return color
 
 
 # To make a spirograph:
 ttt = Turtle()
 ttt.speed("fastest")
-ttt.color(random_color())
-ttt.circle(100)
-# radius 100 ^
-current_heading = ttt.heading()
-ttt.setheading(current_heading + 7)
+for _ in range(100):
+    ttt.color(random_color())
+    ttt.circle(100)
+    # radius 100 ^
+    current_heading = ttt.heading()
+    ttt.setheading(current_heading + 7)
 
 
 screen = Screen()
