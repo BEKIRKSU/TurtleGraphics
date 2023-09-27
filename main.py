@@ -6,8 +6,17 @@ import random
 
 # We tap into the module to change the colour.
 ttt = Turtle()
+# To make a spirograph:
+ttt.speed("fastest")
+ttt.circle(100)
+# radius 100 ^
+screen = Screen()
+# Angela had t.Screen()
+screen.exitonclick()
+
+
+
 # Turtle.colormode(255)
-Turtle.colormode(255)
 ttt.shape("turtle")
 # Use documentation to find different shapes, particular functions etc such as .shape("")
 # Or Google it
@@ -86,13 +95,6 @@ for _ in range(220):
 # If you want to change your tuple you can put it inside a list and convert it into a list.
 # list(tuple) = would result in [1, 2, 3] whatever the tuple is.
 # Look above the colours array to see an example.
-
-
-# To make a spirograph:
-ttt.speed("fastest")
-ttt.circle(100)
-# radius 100 ^
-
 
 
 # Use documentations to figure out how to use these packages and modules.
