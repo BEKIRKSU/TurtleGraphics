@@ -6,14 +6,24 @@ import random
 
 # We tap into the module to change the colour.
 ttt = Turtle()
+
+
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    colour = (r, g, b)
+    return colour
+
+
 # To make a spirograph:
 ttt.speed("fastest")
+ttt.color(random_color())
 ttt.circle(100)
 # radius 100 ^
 screen = Screen()
 # Angela had t.Screen()
 screen.exitonclick()
-
 
 
 # Turtle.colormode(255)
@@ -46,13 +56,6 @@ for _ in range(4):
 #     timmy_the_turtle turned into ttt.
 # colours = ["blue", "green", "orange", "yellow", "black", "red", "DeepSkyBlue", "cyan4", "coral", "AntiqueWhite3"]
 
-def random_color():
-    r = random.randint(0, 255)
-    g = random.randint(0, 255)
-    b = random.randint(0, 255)
-    colour = (r, g, b)
-    return colour
-
 
 def draw_shape(num_sides):
     angle = 360 / num_sides
@@ -63,7 +66,7 @@ def draw_shape(num_sides):
 
 
 for shape_side_n in range(3, 11):
-    ttt.color(colour())
+    ttt.color(random_color())
     # we're using the tuple we made above using r,g,b for random color.
     draw_shape(shape_side_n)
 
