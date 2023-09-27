@@ -1,12 +1,12 @@
 from turtle import Turtle, Screen
 import random
-import heroes
+# import heroes
 
 
 # We tap into the module to change the colour.
-Turtle.colormode(255)
-
 ttt = Turtle()
+# Turtle.colormode(255)
+Turtle.colormode(255)
 ttt.shape("turtle")
 # Use documentation to find different shapes, particular functions etc such as .shape("")
 # Or Google it
@@ -25,21 +25,16 @@ ttt.color("DarkSeaGreen")
 # timmy_the_turtle.forward(100)
 # instead use the for loop and range operator:
 
+# you can just write import from a package that isn't downloaded, and pyCharm will ask if you
+# want to download it, very clear and straightforward.
+# print(heroes.gen())
+
 for _ in range(4):
     ttt.right(90)
     ttt.forward(100)
     # to change the name of anything we named we can right-click, refactor, rename and change it.
 #     timmy_the_turtle turned into ttt.
-
-# you can just write import from a package that isn't downloaded, and pyCharm will ask if you
-# want to download it, very clear and straightforward.
-print(heroes.gen())
-# You can import anywhere, just has to be before you use it.
-
 # colours = ["blue", "green", "orange", "yellow", "black", "red", "DeepSkyBlue", "cyan4", "coral", "AntiqueWhite3"]
-
-# new function to return random colour using rgb"
-
 
 def random_color():
     r = random.randint(0, 255)
