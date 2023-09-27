@@ -1,6 +1,7 @@
 from turtle import Turtle, Screen
 
-
+# We tap into the module to change the colour.
+Turtle.colormode(255)
 
 ttt = Turtle()
 ttt.shape("turtle")
@@ -34,9 +35,6 @@ print(heroes.gen())
 
 import random
 # You can import anywhere, just has to be before you use it.
-
-# We tap into the module to change the colour.
-Turtle.colormode(255)
 
 # colours = ["blue", "green", "orange", "yellow", "black", "red", "DeepSkyBlue", "cyan4", "coral", "AntiqueWhite3"]
 
@@ -79,7 +77,7 @@ distance = range(0, 27)
 # These are nice examples ^ can be used in many ways
 
 for _ in range(220):
-    ttt.color(random.choice(colours))
+    ttt.color(random_color())
     ttt.speed(random.choice(speed))
     ttt.pendown()
     ttt.forward(random.choice(distance))
