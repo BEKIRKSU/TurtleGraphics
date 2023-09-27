@@ -1,4 +1,7 @@
 from turtle import Turtle, Screen
+import random
+import heroes
+
 
 # We tap into the module to change the colour.
 Turtle.colormode(255)
@@ -28,17 +31,16 @@ for _ in range(4):
     # to change the name of anything we named we can right-click, refactor, rename and change it.
 #     timmy_the_turtle turned into ttt.
 
-import heroes
 # you can just write import from a package that isn't downloaded, and pyCharm will ask if you
 # want to download it, very clear and straightforward.
 print(heroes.gen())
-
-import random
 # You can import anywhere, just has to be before you use it.
 
 # colours = ["blue", "green", "orange", "yellow", "black", "red", "DeepSkyBlue", "cyan4", "coral", "AntiqueWhite3"]
 
 # new function to return random colour using rgb"
+
+
 def random_color():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
@@ -61,8 +63,6 @@ for shape_side_n in range(3, 11):
     draw_shape(shape_side_n)
 
 # Here's how to do a random walk, which is used in many disciplines such as Maths and Physics.
-
-
 
 for _ in range(5):
     ttt.pensize(5)
