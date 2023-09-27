@@ -19,8 +19,9 @@ def random_color():
 ttt = Turtle()
 ttt.speed("fastest")
 # We make a function below, around a code which we had earlier (the order of coding sometimes).
+# We wrap the division inside an int, so that we get an integer instead of a floating number.
 def draw_sprirograph(angle_size):
-    for _ in range(360 / angle_size):
+    for _ in range(int(360 / angle_size)):
         ttt.color(random_color())
         ttt.circle(100)
         # radius 100 ^
