@@ -45,7 +45,8 @@ def random_color():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
     b = random.randint(0, 255)
-
+    random_color = (r, g, b)
+    return random_color
 
 
 def draw_shape(num_sides):
@@ -57,7 +58,8 @@ def draw_shape(num_sides):
 
 
 for shape_side_n in range(3, 11):
-    ttt.color(random.choice(colours))
+    ttt.color(random_color())
+    # we're using the tuple we made above using r,g,b for random color.
     draw_shape(shape_side_n)
 
 # Here's how to do a random walk, which is used in many disciplines such as Maths and Physics.
