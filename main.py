@@ -35,7 +35,10 @@ print(heroes.gen())
 import random
 # You can import anywhere, just has to be before you use it.
 
-colours = ["blue", "green", "orange", "yellow", "black", "red", "DeepSkyBlue", "cyan4", "coral", "AntiqueWhite3"]
+# We tap into the module to change the colour.
+Turtle.colormode(255)
+
+# colours = ["blue", "green", "orange", "yellow", "black", "red", "DeepSkyBlue", "cyan4", "coral", "AntiqueWhite3"]
 
 def draw_shape(num_sides):
     angle = 360 / num_sides
@@ -73,7 +76,12 @@ for _ in range(220):
     ttt.setheading(random.choice(directions))
 # Good use of documentations
 
-# tuples are different to arrays/lists. It cannot be changed
+# tuples are different to arrays/lists. Values cannot be changed like in lists.
+# tuple[2] = 7 wouldn't work. When you create a tuple it cannot be changed.
+# Use case = you want a list which no one can change, accidentally especially.
+# If you want to change your tuple you can put it inside a list and convert it into a list.
+# list(tuple) = would result in [1, 2, 3] whatever the tuple is.
+# Look above the colours array to see an example.
 
 
 
