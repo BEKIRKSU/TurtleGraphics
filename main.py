@@ -5,7 +5,6 @@ import random
 # Comment and uncomment areas of code to get selected areas working.
 
 # We tap into the module to change the colour.
-ttt = Turtle()
 
 
 def random_color():
@@ -17,10 +16,15 @@ def random_color():
 
 
 # To make a spirograph:
+ttt = Turtle()
 ttt.speed("fastest")
 ttt.color(random_color())
 ttt.circle(100)
 # radius 100 ^
+current_heading = ttt.heading()
+ttt.setheading(current_heading + 7)
+
+
 screen = Screen()
 # Angela had t.Screen()
 screen.exitonclick()
